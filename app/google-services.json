@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "868328508932",
+    "project_id": "max-player-72f9c",
+    "storage_bucket": "max-player-72f9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868328508932:android:123039716f3360fed9ef51",
+        "android_client_info": {
+          "package_name": "com.uncertaincodes.maxplayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdY_DsfdInkr4r0VyypWFV0psPC24z9jQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

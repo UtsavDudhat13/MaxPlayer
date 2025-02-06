@@ -20,12 +20,10 @@
                 android:layout_height="wrap_content"
                 android:textColor="?android:textColorPrimary"
                 android:text="@string/strPermissionTitle"
-                android:layout_below="@+id/logo"
                 android:fontFamily="@font/semibold"
                 android:layout_marginHorizontal="8dp"
                 android:gravity="center"
                 android:layout_marginBottom="18dp"
-                android:layout_centerHorizontal="true"
                 android:textSize="20sp"/>
 
         <com.airbnb.lottie.LottieAnimationView
@@ -41,11 +39,9 @@
                 android:layout_height="wrap_content"
                 android:textColor="?android:textColorPrimary"
                 android:text="@string/strPermissionDesc"
-                android:layout_below="@+id/logo"
                 android:layout_marginHorizontal="8dp"
                 android:gravity="center"
                 android:layout_marginTop="18dp"
-                android:layout_centerHorizontal="true"
                 android:textSize="16sp"/>
 
         <TextView
@@ -56,9 +52,7 @@
                 android:text="@string/strPermissionDesc2"
                 android:layout_marginHorizontal="8dp"
                 android:gravity="center"
-                android:layout_below="@+id/logo"
                 android:layout_marginTop="6dp"
-                android:layout_centerHorizontal="true"
                 android:textSize="16sp"/>
 
         <Button
@@ -73,5 +67,14 @@
                 android:layout_marginTop="24dp"/>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_naive_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
 
 </RelativeLayout>

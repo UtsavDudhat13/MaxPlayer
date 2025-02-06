@@ -1,19 +1,21 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
-    namespace = "com.example.videoplayer"
+    namespace = "com.uncertaincodes.maxplayer"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.videoplayer"
+        applicationId = "com.uncertaincodes.maxplayer"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
+        versionCode = 6
+        versionName = "1.6"
+        multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -37,17 +39,25 @@ android {
 }
 
 dependencies {
+    implementation("com.android.support:multidex:1.0.3")
 
-        implementation("com.github.anilbeesetti.nextlib:nextlib-media3ext:0.8.2") // To add media3 software decoders and extensions
-        implementation("com.github.anilbeesetti.nextlib:nextlib-mediainfo:0.8.2") // To get media info through ffmpeg
+    implementation("com.github.anilbeesetti.nextlib:nextlib-media3ext:0.8.2") // To add media3 software decoders and extensions
+    implementation("com.github.anilbeesetti.nextlib:nextlib-mediainfo:0.8.2") // To get media info through ffmpeg
 
-    implementation("androidx.media3:media3-exoplayer:1.4.0")
-    implementation("androidx.media3:media3-exoplayer-dash:1.4.0")
-    implementation("androidx.media3:media3-ui:1.4.0")
+    implementation("androidx.media3:media3-exoplayer:1.4.1")
+    implementation("androidx.media3:media3-exoplayer-dash:1.4.1")
+    implementation("androidx.media3:media3-ui:1.4.1")
 
     implementation(project(":doubletapplayerview"))
 
-//    implementation("com.google.android.exoplayer:exoplayer:2.16.1")
+    implementation(platform("com.google.firebase:firebase-bom:33.2.0"))
+    implementation("com.google.firebase:firebase-crashlytics")
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-messaging")
+    implementation("com.google.firebase:firebase-config")
+
+    implementation("com.google.android.gms:play-services-ads:23.3.0")
+    implementation("com.facebook.android:audience-network-sdk:6.17.0")
 
     implementation("com.airbnb.android:lottie:6.5.0")
     implementation("com.tencent:mmkv:1.3.9")

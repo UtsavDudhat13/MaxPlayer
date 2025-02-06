@@ -47,4 +47,8 @@
         <item name="neumorph_shadowColorLight">@color/white</item>
         <item name="neumorph_shadowColorDark">@color/shadowColorDark</item>
     </style>
+
+    <style name="MyAdText">
+        <item name="fontFamily">@null</item>
+    </style>
 </resources>

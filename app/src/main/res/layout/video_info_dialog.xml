@@ -19,7 +19,7 @@
             android:id="@+id/textView_video_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/vname"
+            android:layout_toEndOf="@+id/vname"
             android:layout_marginStart="10dp"
             android:textSize="16sp"/>
 
@@ -41,7 +41,7 @@
             />
         <TextView
             android:id="@+id/textView_video_location"
-            android:layout_toRightOf="@+id/vpath"
+            android:layout_toEndOf="@+id/vpath"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
@@ -56,7 +56,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="8dp"
-
         android:layout_below="@+id/pathll">
 
 

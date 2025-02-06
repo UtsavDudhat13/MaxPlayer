@@ -36,45 +36,50 @@
 
         <ImageView
             android:id="@+id/imageStar1"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
+            android:contentDescription="star"
             android:src="@drawable/ic_star" />
 
         <ImageView
             android:id="@+id/imageStar2"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
             android:layout_marginStart="8dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
+            android:contentDescription="star"
             android:src="@drawable/ic_star" />
 
         <ImageView
             android:id="@+id/imageStar3"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
             android:layout_marginStart="8dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
+            android:contentDescription="star"
             android:src="@drawable/ic_star" />
 
         <ImageView
             android:id="@+id/imageStar4"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
             android:layout_marginStart="8dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
+            android:contentDescription="star"
             android:src="@drawable/ic_star" />
 
         <ImageView
             android:id="@+id/imageStar5"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
             android:layout_marginStart="8dp"
             android:adjustViewBounds="true"
+            android:contentDescription="star"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_star" />
 

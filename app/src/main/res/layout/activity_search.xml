@@ -18,6 +18,7 @@
             android:id="@+id/back_arrow"
             android:layout_width="38dp"
             android:layout_height="38dp"
+            android:contentDescription="back"
             android:src="@drawable/ic_back_arrow"
             android:layout_gravity="center"
             android:padding="8dp"
@@ -42,6 +43,7 @@
             android:id="@+id/close_btn"
             android:layout_width="38dp"
             android:layout_height="38dp"
+            android:contentDescription="close"
             android:padding="8dp"
             android:src="@drawable/ic_close"
             android:layout_gravity="center"
@@ -65,4 +67,13 @@
         android:gravity="center"
         android:layout_centerInParent="true"
         android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_naive_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+
 </RelativeLayout>

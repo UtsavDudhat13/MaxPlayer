@@ -25,6 +25,7 @@
                 android:id="@+id/video_back"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:contentDescription="back"
                 android:tint="@color/white"
                 android:padding="10dp"
                 android:background="?selectableItemBackgroundBorderless"
@@ -32,7 +33,7 @@
 
             <TextView
                 android:id="@+id/video_title"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ellipsize="end"
@@ -46,6 +47,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="10dp"
+                android:contentDescription="caption"
                 android:background="?selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_caption"/>
 
@@ -53,12 +55,14 @@
                 android:id="@+id/btnAudio"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:contentDescription="audio"
                 android:background="?selectableItemBackgroundBorderless"
                 android:padding="10dp"
                 android:src="@drawable/ic_controller_audio_track"/>
             <ImageView
                 android:id="@+id/btnPip"
                 android:layout_width="50dp"
+                android:contentDescription="pip"
                 android:background="?selectableItemBackgroundBorderless"
                 android:layout_height="50dp"
                 android:padding="10dp"
@@ -79,16 +83,15 @@
                 android:id="@+id/progress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/bottom_icons"
                 android:visibility="visible">
 
                 <TextView
                     android:id="@+id/exo_position"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:text="5555"
                     android:textColor="@android:color/white"/>
 
@@ -96,9 +99,9 @@
                     android:id="@+id/exo_duration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     android:text="4444"
                     android:textColor="@android:color/white"/>
 
@@ -108,9 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toStartOf="@+id/exo_duration"
-                    android:layout_toLeftOf="@+id/exo_duration"
                     android:layout_toEndOf="@+id/exo_position"
-                    android:layout_toRightOf="@+id/exo_position"
                     app:played_color="@color/colorPrimary"/>
             </RelativeLayout>
 
@@ -130,12 +131,14 @@
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:layout_weight="1.5"
+                    android:contentDescription="unlock"
                     android:paddingVertical="8dp"
                     android:src="@drawable/ic_lock_open"/>
 
                 <ImageView
                     android:id="@+id/exo_prev"
                     android:layout_width="0dp"
+                    android:contentDescription="prev"
                     android:background="?selectableItemBackgroundBorderless"
                     android:layout_height="50dp"
                     android:layout_weight="2"
@@ -146,6 +149,7 @@
                     android:id="@+id/exoPlayPause"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
+                    android:contentDescription="playPause"
                     android:layout_weight="3"
                     android:background="?selectableItemBackgroundBorderless"
                     android:paddingVertical="5dp"
@@ -156,6 +160,7 @@
                     android:id="@+id/exo_next"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
+                    android:contentDescription="next"
                     android:background="?selectableItemBackgroundBorderless"
                     android:layout_weight="2"
                     android:paddingVertical="8dp"
@@ -167,6 +172,7 @@
                     android:layout_height="50dp"
                     android:layout_weight="1.5"
                     android:background="?selectableItemBackgroundBorderless"
+                    android:contentDescription="scaling"
                     android:paddingVertical="8dp"
                     android:src="@drawable/ic_fit"/>
 
@@ -185,6 +191,7 @@
         android:layout_centerVertical="true"
         android:layout_marginEnd="10dp"
         android:background="@drawable/ic_image_background"
+        android:contentDescription="lock"
         android:scaleType="centerInside"
         android:src="@drawable/ic_controller_lock"
         android:visibility="gone"/>

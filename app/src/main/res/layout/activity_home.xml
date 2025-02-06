@@ -15,7 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
 
             <TextView
                 android:id="@+id/tv_title"
@@ -32,6 +33,7 @@
                 android:id="@+id/btn_search"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
+                android:contentDescription="search"
                 android:padding="5dp"
                 android:src="@drawable/ic_search"
                 android:layout_marginEnd="14dp"
@@ -44,7 +46,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <FrameLayout
             android:id="@+id/container_frame"
@@ -63,6 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
+                android:baselineAligned="false"
                 android:orientation="horizontal">
                 <LinearLayout
                     android:id="@+id/homell"
@@ -70,11 +74,13 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:id="@+id/home"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
+                        android:contentDescription="home"
                         android:src="@drawable/ic_home"
                         android:layout_gravity="center"/>
                     <TextView
@@ -91,11 +97,13 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:layout_weight="1"
-                    android:gravity="center">
+                    android:gravity="center"
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:id="@+id/folder"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
+                        android:contentDescription="folder"
                         android:src="@drawable/ic_foldertab"
                         android:layout_gravity="center"/>
 
@@ -113,12 +121,13 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:layout_weight="1"
-
-                    android:gravity="center">
+                    android:gravity="center"
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:id="@+id/setting"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
+                        android:contentDescription="setings"
                         android:src="@drawable/ic_setting"
                         android:layout_gravity="center"/>
 
@@ -137,9 +146,12 @@
 
     </RelativeLayout>
 
-
-
-
+    <LinearLayout
+        android:id="@+id/ll_naive_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"/>
 
 
 </LinearLayout>

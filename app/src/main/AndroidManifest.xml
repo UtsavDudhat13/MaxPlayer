@@ -12,9 +12,6 @@
         android:maxSdkVersion="32"
         tools:ignore="ScopedStorage"/>
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
-    <uses-permission
-        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
-        tools:ignore="ScopedStorage"/>
 
     <application
         android:name=".BaseActivity"
@@ -29,8 +26,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VideoPlayer"
         tools:targetApi="31">
+
         <activity
-            android:name=".activities.ContactUsActivity"
+            android:name=".ads.FbNativeInterstitial"
             android:exported="false"/>
         <activity
             android:name=".activities.PrivacyPolicyActivity"
@@ -71,13 +69,17 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.videoplayer.fileprovider"
+            android:authorities="com.uncertaincodes.maxplayer.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths"/>
         </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
     </application>
 
 </manifest>

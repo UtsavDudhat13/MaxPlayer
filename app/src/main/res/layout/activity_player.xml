@@ -57,6 +57,7 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginEnd="12dp"
+            android:contentDescription="msg"
             android:padding="2dp"
             android:src="@drawable/ic_brightness_medium" />
 
@@ -72,52 +73,52 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/rl_guide"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:background="@color/ui_controls_bg"-->
-<!--        android:visibility="gone">-->
+    <RelativeLayout
+        android:id="@+id/rl_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ui_controls_bg"
+        android:visibility="gone">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imgGuide"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="158dp"-->
-<!--            android:paddingHorizontal="18dp"-->
-<!--            android:scaleType="centerInside"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:src="@drawable/img_guide1" />-->
+        <ImageView
+            android:id="@+id/imgGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:contentDescription="guide"
+            android:paddingHorizontal="18dp"
+            android:scaleType="centerInside"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_guide1" />
 
-<!--        <Button-->
-<!--            android:id="@+id/btnNext"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_alignParentBottom="true"-->
-<!--            android:layout_marginEnd="18dp"-->
-<!--            android:layout_marginBottom="18dp"-->
-<!--            android:background="@drawable/bg_stroke_btn"-->
-<!--            android:text="Next"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="16sp" />-->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_button"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
-<!--        <Button-->
-<!--            android:id="@+id/btnOk"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_alignParentEnd="true"-->
-<!--            android:layout_alignParentBottom="true"-->
-<!--            android:layout_marginEnd="18dp"-->
-<!--            android:layout_marginBottom="18dp"-->
-<!--            android:background="@drawable/bg_stroke_btn"-->
-<!--            android:text="Ok"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="16sp"-->
-<!--            android:visibility="gone" />-->
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_button"
+            android:text="Ok"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
 
-
-<!--    </RelativeLayout>-->
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

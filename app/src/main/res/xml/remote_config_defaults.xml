@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <entry><key>interstitial_ad_count</key><value>3</value></entry>-->
+
+<!--    <entry><key>show_app_open</key><value>true</value></entry>-->
+
+<!--    <entry><key>show_interstitial</key><value>true</value></entry>-->
+
+<!--    <entry><key>show_native</key><value>true</value></entry>-->
+
+<!--    <entry><key>native_type</key><value>google</value></entry>-->
+
+<!--    <entry><key>interstitial_type</key><value>google</value></entry>-->
+
+<!--    <entry><key>google_native_id</key><value>/21775744923/example/native</value></entry>-->
+
+<!--    <entry><key>google_interstitial_id</key><value>/21775744923/example/interstitial</value></entry>-->
+
+<!--    <entry><key>google_app_open_id</key><value>/21775744923/example/app-open</value></entry>-->
+
+<!--    <entry><key>fb_native_id</key><value>YOUR_PLACEMENT_ID</value></entry>-->
+
+<!--    <entry><key>fb_native_banner_id</key><value>YOUR_PLACEMENT_ID</value></entry>-->
+
+<!--    <entry><key>fb_interstitial_id</key><value>YOUR_PLACEMENT_ID</value></entry>-->
+
+</defaultsMap>
